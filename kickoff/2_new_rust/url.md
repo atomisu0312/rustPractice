@@ -1,0 +1,1 @@
+https://imoz.jp/note/rust-functions.html
