@@ -3,6 +3,20 @@ use num::Complex;
 use std::str::FromStr;
 
 /**
+ * z = z * z + cという更新式において、
+ * 半径が2の円の外に出るまでの更新回数を出力する
+ */
+fn escape_time(c: Complex<f64>, limit: usize) -> Option<usize> {
+    let mut z = Complex {re: 0.0, im:0.0};
+    for i in 0..limit {
+        if z.norm_sqr() > 4.0 {
+            return Some(i);
+        }
+        z = z * z + c;
+    }
+    None
+}
+/**
  * <T:FromStr> Tはジェネリック型で、FromStr(trait)を継承しているものであると示す
  * 引数についてはいつも通り、参照わたししているだけ
  * Optionalは型Tである。OKならSome, NGならNo
