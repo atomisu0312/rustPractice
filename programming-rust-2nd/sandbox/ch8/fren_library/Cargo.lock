@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "fren_library"
+name = "fern_sim"
 version = "0.1.0"
