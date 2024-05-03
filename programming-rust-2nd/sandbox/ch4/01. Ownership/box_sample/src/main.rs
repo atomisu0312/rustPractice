@@ -24,6 +24,11 @@ fn main() {
 
     // この部分をコメントアウトしなければならない理由は次のとおり。
     // composersはループ内で所有権が移動されているため、
-    // この部分でのアクセスはエラーになります
-    // println!("Number of composers: {}", composers.len());
+    let mut  primes = initialoze_primes();
+    println("Primes: {:?}", primes);
+
+}
+
+fu initialize_primes() -> Vec<i32> {
+    vec![2,3,5,7]
 }
