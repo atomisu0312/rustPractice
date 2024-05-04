@@ -32,3 +32,4 @@ fn main() {
 fu initialize_primes() -> Vec<i32> {
     vec![2,3,5,7]
 }
+

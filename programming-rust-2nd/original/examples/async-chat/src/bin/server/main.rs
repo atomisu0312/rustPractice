@@ -30,6 +30,7 @@ fn main() -> ChatResult<()> {
             task::spawn(async {
                 log_error(serve(socket, groups).await);
             });
+            println!("*************");
         }
 
         Ok(())
